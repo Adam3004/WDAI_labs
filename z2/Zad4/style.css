@@ -1,0 +1,310 @@
+body {
+  background: url("images/bg.jpg");
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(98, 180, 227, 0.4);
+}
+
+main {
+  background: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 831px;
+}
+
+#fog {
+  width: 100%;
+  background: rgb(98, 180, 227, 0.4);
+  height: 831px;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  height: 76px;
+  background-color: rgb(98, 180, 227);
+  align-items: center;
+  justify-content: center;
+  min-width: 1000px;
+}
+
+#brandName {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-size: 41px;
+  /* padding-left: 170px; */
+  margin: 0px;
+  position: absolute;
+  margin-right: 65%;
+}
+
+#panelsContainer {
+  width: 392px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  font-size: 130%;
+
+  /* margin-left: 160px; */
+}
+
+.slidingOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#firstSlidingOption {
+  width: 19%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#menuContainer {
+  position: absolute;
+  height: 76px;
+  display: flex;
+  align-items: center;
+}
+
+#secondSlidingOption {
+  width: 25%;
+  height: 100%;
+}
+
+img {
+  height: 11px;
+  padding-top: 4px;
+  padding-left: 5px;
+}
+
+.logButton {
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttonText {
+  display: block;
+  width: 116px;
+  line-height: 36px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  border: 2px solid rgb(2, 2, 2, 0);
+}
+
+#loginButton {
+  background-color: rgb(98, 180, 227);
+}
+
+#loginButton:hover {
+  background-color: white;
+}
+
+#loginButton > * {
+  color: white;
+}
+
+#loginButton:hover > * {
+  color: rgb(98, 180, 227);
+}
+
+#signupButton {
+  background-color: white;
+  margin-left: 8px;
+}
+
+#signupButton:hover {
+  background-color: rgb(98, 180, 227);
+}
+
+#signupButton > * {
+  color: rgb(98, 180, 227);
+}
+
+#signupButton:hover > * {
+  color: white;
+}
+
+#logButtonsContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 70%;
+}
+
+.optionsContainer {
+  position: absolute;
+  margin-right: 2%;
+  width: 172px;
+  height: 224px;
+  background-color: white;
+  top: 76px;
+  display: none;
+}
+
+#optionsContainer2 {
+  margin-left: 6%;
+}
+
+.option {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.option:hover {
+  background-color: rgb(98, 180, 227);
+}
+
+.option:hover > a > p {
+  color: white;
+}
+.option:hover .arrowRight {
+  border-left: 11px solid white;
+}
+
+.option:hover .arrowRight {
+  border-left: 11px solid white;
+}
+
+/* .slidingOption:has(.menuOption1:hover) .arrowTop{
+  border-bottom: 13px solid rgb(98, 180, 227);
+} */
+
+.optionLink {
+  display: block;
+  width: 100%;
+  line-height: 55px;
+}
+
+.optionLinkText {
+  margin: 0px;
+  margin-left: 12%;
+  color: rgb(98, 180, 227);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuOption4,
+.menuOption2 {
+  height: 55px;
+  border-top: 1px solid rgb(98, 180, 227);
+}
+
+#secondSlidingOption>.optionsContainer>.menuOption2{
+  border-top: 0px;
+  border-bottom: 1px solid rgb(98, 180, 227);
+}
+
+.optionMenuLink2,
+.optionMenuLink4 {
+  height: 54px;
+}
+
+#firstSlidingOption:hover .arrowTop {
+  display: block;
+}
+
+#firstSlidingOption:hover .optionsContainer {
+  display: block;
+}
+
+#secondSlidingOption:hover .optionsContainer {
+  display: block;
+}
+
+#secondSlidingOption:hover .arrowTop {
+  display: block;
+}
+.arrowDown {
+  width: 0;
+  height: 0;
+  border-top: 9px solid white;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.arrowTop {
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid white;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  margin-left: 4px;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 22px;
+  display: none;
+}
+
+#secondArrowTop {
+  margin-left: -25px;
+}
+
+.arrowRight {
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 11px solid rgb(98, 180, 227);
+  position: absolute;
+  bottom: 75px;
+  left: 142px;
+}
+
+#secondArrowRight {
+  bottom: 132px;
+}
+
+/* #firstSlidingOption:hover{
+  background-color: rgb(158, 219, 255);
+} */
+
+#firstSlidingOption:hover .titleText,
+#secondSlidingOption:hover .titleText {
+  color: rgb(158, 219, 255);
+}
+
+#firstSlidingOption:hover .arrowDown,
+#secondSlidingOption:hover .arrowDown {
+  border-top: 9px solid rgb(158, 219, 255);
+}
+
+.titleText:hover {
+  color: rgb(158, 219, 255);
+}

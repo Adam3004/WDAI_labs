@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My website</title>
+  </head>
+  <body>
+    <header class="bodyElement">
+      <h1 id="headerTitle">Personal page</h1>
+      <div id="buttonsContainer">
+        <button id="loginButton" class="loginingButton" type="button">LOGIN</button>
+        <button id="signUpButton" class="loginingButton" type="button">SIGN UP</button>
+      </div>
+    </header>
+    <nav class="bodyElement">
+      <button class="navButtons">HOME</button>
+      <button class="navButtons">ABOUT ME</button>
+      <button class="navButtons">RESERVATION</button>
+      <button class="navButtons">MORE PROJECTS</button>
+    </nav>
+    <main class="bodyElement">
+      <div class="testEntryContainer">
+        <figure class="testEntry">
+          <img class="mainImg" alt="Avatar" src="images/nature3.jpg" />
+          <h3 class="imgTitle">PRZYKŁADOWY NAGŁÓWEK 1</h3>
+          <figcaption class="imgDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            optio! Voluptatum, iure. Facilis, nam quo nemo, odio inventore ad
+            officia sapiente itaque reprehenderit doloribus voluptatibus
+            blanditiis debitis. Possimus cupiditate quam qui inventore. Magnam
+            consectetur iure aperiam iste, omnis culpa eveniet!
+          </figcaption>
+        </figure>
+      </div>
+      <div class="testEntryContainer">
+        <figure class="testEntry">
+          <img class="mainImg" alt="Avatar" src="images/nature2.jpg" />
+          <h3 class="imgTitle">PRZYKŁADOWY NAGŁÓWEK 2</h3>
+          <figcaption class="imgDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            optio! Voluptatum, iure. Facilis, nam quo nemo, odio inventore ad
+            officia sapiente itaque reprehenderit doloribus voluptatibus
+            blanditiis debitis. Possimus cupiditate quam qui inventore. Magnam
+            consectetur iure aperiam iste, omnis culpa eveniet!
+          </figcaption>
+        </figure>
+      </div>
+      <div class="testEntryContainer">
+        <figure class="testEntry">
+          <img class="mainImg" alt="Avatar" src="images/nature1.jpg" />
+          <h3 class="imgTitle">PRZYKŁADOWY NAGŁÓWEK 3</h3>
+          <figcaption class="imgDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            optio! Voluptatum, iure. Facilis, nam quo nemo, odio inventore ad
+            officia sapiente itaque reprehenderit doloribus voluptatibus
+            blanditiis debitis. Possimus cupiditate quam qui inventore. Magnam
+            consectetur iure aperiam iste, omnis culpa eveniet!
+          </figcaption>
+        </figure>
+      </div>
+      <div class="testEntryContainer">
+        <figure class="testEntry">
+          <img class="mainImg" alt="Avatar" src="images/nature5.jpg" />
+          <h3 class="imgTitle">PRZYKŁADOWY NAGŁÓWEK 4</h3>
+          <figcaption class="imgDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            optio! Voluptatum, iure. Facilis, nam quo nemo, odio inventore ad
+            officia sapiente itaque reprehenderit doloribus voluptatibus
+            blanditiis debitis. Possimus cupiditate quam qui inventore. Magnam
+            consectetur iure aperiam iste, omnis culpa eveniet!
+          </figcaption>
+        </figure>
+      </div>
+      <div class="testEntryContainer">
+        <figure class="testEntry">
+          <img class="mainImg" alt="Avatar" src="images/nature6.jpg" />
+          <h3 class="imgTitle">PRZYKŁADOWY NAGŁÓWEK 5</h3>
+          <figcaption class="imgDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            optio! Voluptatum, iure. Facilis, nam quo nemo, odio inventore ad
+            officia sapiente itaque reprehenderit doloribus voluptatibus
+            blanditiis debitis. Possimus cupiditate quam qui inventore. Magnam
+            consectetur iure aperiam iste, omnis culpa eveniet!
+          </figcaption>
+        </figure>
+      </div>
+      <form id="testForm">
+        <div id="formContainer">
+          <h2 id="fromTitle">TESTOWY WPIS</h2>
+          <input
+            id="inputName"
+            class="formInput"
+            type="text"
+            placeholder="Full name"
+            required
+          />
+          <input
+            id="email"
+            class="formInput"
+            type="email"
+            placeholder="Email address"
+            required
+          />
+          <div id="radioContainer">
+            <input
+              id="radio1"
+              class="inputRadio"
+              name="groupSize"
+              type="radio"
+              required
+            />
+            <label class="radioLabel" for="radio1">male grupy turystyczne</label>
+            <input
+              id="radio2"
+              class="inputRadio"
+              name="groupSize"
+              type="radio"
+            />
+            <label class="radioLabel" for="radio2">Duże grupy turystyczne</label>
+          </div>
+          <button id="submitButton" type="submit">
+            <p>NASTĘPNY KROK</p>
+            <img id="arrow"
+              src="https://img.icons8.com/ios-glyphs/90/null/long-arrow-right.png"
+            />
+          </button>
+        </div>
+      </form>
+    </main>
+    <div id="sidebar" class="bodyElement">
+      <div id="card">
+        <img class alt="Avatar" id="avatar" src="images/myPicture.jpg" />
+        <h1 id="name">ADAM MISZTAL</h1>
+        <p id="professionInfo" class="cardInfo">full stack developer</p>
+        <p id="phoneNumber" class="cardInfo">(+48) 123 456 789</p>
+        <div class="socialMediaContainerContainer">
+          <div class="socialMediaContainer">
+            <a href="https://www.facebook.com/" class="cardInfo cardLink">
+              <img
+                id="fbIcon"
+                src="https://img.icons8.com/fluency/48/null/facebook-new.png"
+                class="socialMediaImg"
+              />
+              Facebook</a
+            >
+          </div>
+        </div>
+        <div class="socialMediaContainerContainer">
+          <div class="socialMediaContainer">
+            <a href="https://www.instagram.com/" class="cardInfo cardLink">
+              <img
+                id="igIcon"
+                src="https://img.icons8.com/fluency/48/null/instagram-new.png"
+                class="socialMediaImg"
+              />
+              Instagram</a
+            >
+          </div>
+        </div>
+        <div class="socialMediaContainerContainer">
+          <div class="socialMediaContainer">
+            <a href="https://www.linkedin.com/" class="cardInfo cardLink">
+              <img
+                id="linkedInIcon"
+                src="https://img.icons8.com/fluency/48/null/linkedin.png"
+                class="socialMediaImg"
+              />
+              LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ads" class="bodyElement"></div>
+    <footer class="bodyElement">
+      <p id="footerHeadere">Links to icons which I used when I was creating the website:</p>
+      <a target="_blank" href="https://icons8.com/icon/uLWV5A9vXIPu/facebook"
+        >Facebook icon by Icons8</a
+      >
+      <a target="_blank" href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram"
+        >Instagram icon by Icons8</a
+      >
+      <a target="_blank" href="https://icons8.com/icon/xuvGCOXi8Wyg/linkedin"
+        >LinkedIn icon by Icons8</a
+      >
+      <a target="_blank" href="https://icons8.com/icon/99982/right-arrow"
+        >Right Arrow icon by Icons8</a
+      >
+    </footer>
+  </body>
+</html>

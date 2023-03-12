@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Change password</title>
+  </head>
+  <body>
+    <main>
+      <form id="passwordForm">
+        <label for="passwordField1">New password: </label>
+        <input id="passwordField1" class="passwordInput" type="password" />
+        <img
+          id="visibleImg1"
+          src="https://img.icons8.com/windows/64/null/visible--v1.png"
+          class="visibleImg"
+        />
+        <label for="passwordField2">Repeat new password: </label>
+        <input id="passwordField2" class="passwordInput" type="password" />
+        <img
+          id="visibleImg2"
+          src="https://img.icons8.com/windows/64/null/visible--v1.png"
+          class="visibleImg"
+        />
+      </form>
+      <p id="communicate" class="communicate">Passwords are different</p>
+      <p id="communicate2" class="communicate">Password doesn't fullfill requirements</p>
+      <!-- <input id="submitButton" type="submit" value="Change password" /> -->
+      <div id="requirementsContainer">
+        <p>Password requirements</p>
+        <div class="requirementContainer">
+          <img
+            id="minChar"
+            src="https://img.icons8.com/office/40/null/cancel.png"
+            class="requirementIcon"
+          />
+          <p class="requirement">at least 8 characters</p>
+        </div>
+        <div class="requirementContainer">
+          <img
+            id="specialChar"
+            src="https://img.icons8.com/office/40/null/cancel.png"
+            class="requirementIcon"
+          />
+          <p class="requirement">at least one special character</p>
+        </div>
+        <div class="requirementContainer">
+          <img
+            id="capitalChar"
+            src="https://img.icons8.com/office/40/null/cancel.png"
+            class="requirementIcon"
+          />
+          <p class="requirement">at least one capital letter</p>
+        </div>
+        <div class="requirementContainer">
+          <img
+            id="digit"
+            src="https://img.icons8.com/office/40/null/cancel.png"
+            class="requirementIcon"
+          />
+          <p class="requirement">at least one digit</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a target="_blank" href="https://icons8.com/icon/21067/cancel"
+        >Cancel icon by Icons8</a
+      >
+      <a target="_blank" href="https://icons8.com/icon/21068/checkmark"
+        >Checkmark icon by Icons8</a
+      >
+      <a target="_blank" href="https://icons8.com/icon/16100/eye"
+        >Eye icon by Icons8</a
+      >
+    </footer>
+  </body>
+</html>

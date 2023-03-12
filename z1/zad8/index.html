@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <p id="bankTitle">BANK AGH</p>
+    </header>
+    <main>
+        <div id="transferContainer">
+            <form action="#" method="get">
+                <label for="accountNumber">Account Number: </label>
+                <input type="text" id="accountNumber" pattern="[0-9]{26}" title="Account number have 26 digits" placeholder="12345678912345678912345678" required>
+                <label for="name">Name: </label>
+                <input type="text" id="name" required>
+                <label for="surname">Surname: </label>
+                <input type="text" id="surname" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="student@student.agh.edu.pl" required>
+                <label for="adress">Adress: </label>
+                <input type="text" id="adress" required>
+                <label for="zipCode">ZIP Code: </label>
+                <input type="text" id="zipCode" pattern="[0-9]{2}-[0-9]{3}" title="12-345" placeholder="12-345" required>
+                <label for="city">City: </label>
+                <input type="text" id="city" list="cities" placeholder="Cracow" required>
+                <datalist id="cities">
+                    <option value="Cracow"></option>
+                    <option value="Warsaw"></option>
+                    <option value="Kielce"></option>
+                    <option value="Zakopane"></option>
+                    <option value="Poznan"></option>
+                    <option value="Wroclaw"></option>
+                    <option value="Lublin"></option>
+                    <option value="Gdansk"></option>
+                    <option value="Gdynia"></option>
+                    <option value="Szczecin"></option>
+                </datalist>
+                <label for="amount">Transfer Amount: </label>
+                <input type="number" id="amount" step="0.01" min="0.01" placeholder="21.37" required>
+                <label for="date">Date: </label>
+                <input type="date" id="date" required>
+
+                <input type="submit" value="Send" id="submitButton">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

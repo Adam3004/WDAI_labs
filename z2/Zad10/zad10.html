@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trip cards</title>
+  </head>
+  <body>
+    <main>
+      <!-- first card -->
+      <div class="cardContainer">
+        <div class="card">
+          <div id="firstCardFront" class="cardFront">
+            <img class="frontImg" src="images/tlo.jpg" />
+            <div class="cardFrontBackgroundSkrew"></div>
+            <div class="cardFrontBackground">
+              <div class="frontInformation">3 dniowa wycieczka</div>
+              <div class="frontInformation">max 30 osób</div>
+              <div class="frontInformation">super wrażenia</div>
+              <div class="frontInformation">Hotel Agh</div>
+              <div class="frontInformation">Trudność wycieczki: łatwa</div>
+            </div>
+            <div class="infoBlock infoBlockUp infoBlockFirst">Najlepsza</div>
+            <div class="infoBlock infoBlockDown infoBlockFirst">Wycieczka</div>
+          </div>
+          <div id="firstCardBack" class="cardBack">
+            <div class="priceContainer">
+              <p>TYLKO</p>
+              <p>1500zł</p>
+            </div>
+            <button
+              type="button"
+              class="reservationButton"
+              onclick="alert('You made a reservation')"
+            >
+              ZAREZERWUJ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- second card -->
+      <div class="cardContainer">
+        <div class="card">
+          <div id="secondCardFront" class="cardFront">
+            <img class="frontImg" src="images/tlo2.jpg" />
+            <div class="cardFrontBackgroundSkrew"></div>
+            <div class="cardFrontBackground">
+              <div class="frontInformation">7 dniowa wycieczka</div>
+              <div class="frontInformation">max 50 osób</div>
+              <div class="frontInformation">niezapomniane doświadczenia</div>
+              <div class="frontInformation">Hotel Bagdad</div>
+              <div class="frontInformation">Trudność wycieczki: trudna</div>
+            </div>
+            <div class="infoBlock infoBlockUp infoBlockSecond">Druga</div>
+            <div class="infoBlock infoBlockDown infoBlockSecond">Wycieczka</div>
+          </div>
+          <div id="secondCardBack" class="cardBack">
+            <div class="priceContainer">
+              <p>JEDYNE</p>
+              <p>25 500zł</p>
+            </div>
+            <button
+              type="button"
+              class="reservationButton"
+              onclick="alert('You made a reservation')"
+            >
+              ZAREZERWUJ
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

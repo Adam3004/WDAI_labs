@@ -1,0 +1,29 @@
+#container{
+    width: 50%;
+    height: 500px;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    padding: 1%;
+}
+
+.box{
+    border: 5px solid black;
+    height: 25%;
+}
+
+.blueBox{
+    width: 70%;
+    background-color:aqua;
+}
+
+.redBox{
+    width: 20%;
+    background-color: red;
+}
+
+#yellowBox{
+    width: 95%;
+    background-color: yellow;
+}

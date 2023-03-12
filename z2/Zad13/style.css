@@ -1,0 +1,722 @@
+body {
+  display: grid;
+  height: 2400px;
+  background-image: url("images/sky.jpg");
+  /* background-color: wheat; */
+  /* background-image: linear-gradient(to left top, rgb(123, 184, 253), rgb(0, 40, 116)); */
+  grid-template-columns: 20% 56% 20%;
+  grid-template-rows: 5% 5% 79% 5%;
+  grid-gap: 2%;
+  min-width: 527px;
+}
+
+/* .bodyElement {
+  background-color: cadetblue;
+} */
+
+#headerTitle {
+  background: -webkit-linear-gradient(right, rgb(0, 49, 139), rgb(0, 103, 187));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  margin-left: 20px;
+}
+
+header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.6);
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  left: 0px;
+  min-width: 521px;
+  top: 0px;
+}
+
+#buttonsContainer {
+  width: 274px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#loginButton,
+#signUpButton {
+  background-color: rgb(83, 178, 255);
+  color: white;
+  border: 3px solid white;
+}
+
+#loginButton:hover,
+#signUpButton:hover {
+  color: rgb(47, 162, 255);
+  background-color: white;
+  border: 3px solid rgb(83, 178, 255);
+}
+
+.loginingButton {
+  border: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 120px;
+  height: 50px;
+  border-radius: 40px;
+  margin-right: 15px;
+  font-size: 17px;
+}
+
+nav {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navButtons{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  background-image: linear-gradient(
+    to left top,
+    rgb(0, 119, 255),
+    rgb(85, 178, 255)
+  );
+  transition: width 1s, font-size 1s;
+}
+.navButtons:hover{
+  background-image: linear-gradient(
+    to left top,
+    rgb(0, 0, 0),
+    rgb(255, 0, 0)
+  );
+}
+
+
+
+main {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#sidebar {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+#ads {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-image: url("images/pepsi.jpg");
+  background-size: contain;
+
+}
+
+footer {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#footerHeadere {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+footer > * {
+  font-family: "Courier New", Courier, monospace;
+}
+#card {
+  background-color: rgb(255, 255, 255, 0.8);
+  position: fixed;
+  width: 19.8%;
+  height: 62.7%;
+  min-height: 412px;
+  /* height: 60.6%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0px 0px 13px 5px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* bottom: 150px;
+  top: 150px; */
+}
+
+#avatar {
+  vertical-align: middle;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  /* margin-left: 2%; */
+  margin-top: 5%;
+}
+
+.cardInfo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+
+#name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.7s;
+  font-size: 2em;
+}
+
+#phoneNumber {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#professionInfo {
+  margin-left: 0%;
+  margin-top: 10%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.socialMediaContainerContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialMediaContainer {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testEntryContainer {
+  width: 92.5%;
+  background-color: rgb(255, 255, 255, 0.8);
+  height: 250px;
+  transform: skewX(-10deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testEntry {
+  width: 90%;
+  height: 80%;
+  transform: none;
+  transform: skewX(10deg);
+  /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.mainImg {
+  float: left;
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  shape-outside: circle();
+  margin-right: 15px;
+}
+.imgTitle,
+.imgDescription {
+  width: 95%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: font-size 0.5s;
+  /* color: grey; */
+}
+
+.imgDescription {
+  font-size: 18px;
+  transition: font-size 0.5s, width 0.5s;
+}
+
+#testForm {
+  width: 100%;
+  height: 500px;
+  background-image: url("images/nature.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#formContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 90%;
+  /* width: 40%; */
+  /* margin-top: 5%; */
+  margin-left: 50px;
+}
+
+#testForm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 60%;
+  width: 150%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.7);
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  transform: skewX(-25deg);
+  transition: right 0.5s;
+}
+
+@media screen and (max-width: 1650px) {
+  #testForm::before {
+    right: 55%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  #testForm::before {
+    right: 50%;
+  }
+}
+
+#fromTitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  background: -webkit-linear-gradient(
+    right,
+    rgb(0, 83, 238),
+    rgb(47, 162, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.formInput {
+  width: 90%;
+  height: 40px;
+  border: 0px;
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  color: rgb(92, 92, 92);
+}
+
+.formInput:focus {
+  outline: none;
+}
+
+#radioContainer {
+  display: flex;
+  align-items: center;
+}
+
+.radioLabel {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(92, 92, 92);
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
+.inputRadio {
+  appearance: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgb(47, 162, 255);
+  border-radius: 50%;
+  margin: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+
+.inputRadio:checked {
+  appearance: none;
+  background-color: rgb(47, 162, 255);
+  border: 3px solid white;
+}
+
+#submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to left top,
+    rgb(0, 119, 255),
+    rgb(85, 178, 255)
+  );
+  border: 0px;
+  color: white;
+}
+
+#arrow {
+  width: 20px;
+  filter: grayscale(1) invert(1);
+}
+
+@media screen and (max-width: 1350px) {
+  #name {
+    font-size: 1.8em;
+  }
+  #testForm::before {
+    right: 45%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    grid-template-columns: 30% 68%;
+    grid-row-gap: 1%;
+    grid-column-gap: 2%;
+    grid-template-rows: 5% 5% 82% 5%;
+  }
+
+  header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  nav {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  main {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #sidebar {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #ads {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  footer {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #card {
+    width: 29.6%;
+    height: 52.7%;
+    /* width: 29.55%;
+    height: 45.7%; */
+  }
+
+  #name {
+    margin-bottom: 3px;
+    font-size: 1.6em;
+    transition: none;
+  }
+
+  #avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 2%;
+  }
+  .cardInfo {
+    font-size: 21px;
+  }
+
+  #phoneNumber {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #professionInfo {
+    margin-left: 0%;
+    margin-top: 2%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .imgDescription {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  /* #testForm::before {
+    right: 40%;
+  } */
+
+  .imgTitle {
+    font-size: 17.5px;
+  }
+
+  .radioLabel{
+    font-size: 15px;
+  }
+
+  #fromTitle{
+    font-size: 40px;
+  }
+
+  .inputRadio{
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .imgTitle {
+    font-size: 16px;
+  }
+
+  /* #testForm::before {
+    right: 35%;
+  } */
+}
+
+@media screen and (max-width: 880px) {
+  #testForm::before {
+    right: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-columns: 100%;
+    grid-row-gap: 1%;
+    grid-column-gap: 0%;
+    grid-template-rows: 5% 5% 70% 5% 5% 5%;
+  }
+
+  header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  nav {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  main {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #sidebar {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #ads {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  footer {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #card {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    bottom: 296px;
+    left: 0%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px;
+    min-height: 0px;
+  }
+
+  #name {
+    margin-bottom: 3px;
+    font-size: 1.5em;
+    transition: none;
+    margin-top: 6px;
+  }
+
+  #avatar {
+    width: 115px;
+    height: 115px;
+    margin-top: 0%;
+  }
+  .cardInfo {
+    font-size: 21px;
+  }
+
+  #phoneNumber {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    margin-bottom: 6px;
+  }
+
+  #professionInfo {
+    margin-left: 0%;
+    margin-top: 2%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+  }
+
+  .socialMediaContainerContainer {
+    width: auto;
+    height: 35px;
+  }
+
+  .socialMediaImg {
+    width: 35px;
+  }
+
+  .testEntryContainer {
+    height: 13%;
+  }
+
+  #testForm::before {
+    right: 50%;
+  }
+
+  #testForm {
+    width: 103%;
+    margin-left: 0px;
+  }
+
+  #headerTitle {
+    font-size: 40px;
+  }
+
+  .loginingButton {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+
+  #buttonsContainer {
+    width: 234px;
+  }
+
+  .radioLabel {
+    font-size: 17px;
+  }
+
+  .inputRadio {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #testForm::before {
+    right: 45%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #testForm::before {
+    right: 40%;
+  }
+  .navButtons{
+    width: 120px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #testForm::before {
+    right: 35%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #testForm::before {
+    right: 30%;
+  }
+}

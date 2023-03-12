@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Phone book</title>
+  </head>
+  <body>
+    <main id="main">
+      <form id="addContactForm" action="#">
+        <div class="inputDataContainer">
+        <label class="dataLabel" for="nameInput">IMIĘ I NAZWISKO</label>
+        <input id="nameInput" 
+        class="dataInput" 
+        required 
+        maxlength="100" 
+        title="You have to start name and surname from capital letter. If you have two-part surname use space or '-' between parts"
+        pattern="([\p{Lu}]{1}[\p{Ll}]*\s[\p{Lu}]{1}[\p{Ll}]*)|([\p{Lu}]{1}[\p{Ll}]*\s[\p{Lu}]{1}[\p{Ll}]*[-]{1}[\p{Lu}]{1}[\p{Ll}]*)|([\p{Lu}]{1}[\p{Ll}]*\s[\p{Lu}]{1}[\p{Ll}]*\s[\p{Lu}]{1}[\p{Ll}]*)"></inpiut>
+      </div>
+      <div class="inputDataContainer">
+        <label class="dataLabel" for="numberInput">TELEFON</label>
+        <input id="numberInput" 
+        class="dataInput"
+        required 
+        title="Use 9 or 12 digits. If u use 12 digits u can add '+'"
+        pattern="(\s*[+]{0,1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*)|(\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*[0-9]{1}\s*)"></inpiut>
+      </div>
+      <div id="containerWithButton" class="inputDataContainer">
+        <label id="notVisual">aa</label>
+        <button id="submitFormButton" type="submit" name="submit">Dodaj</button>
+      </div>
+      </form>
+    </main>
+    <footer>
+      <a target="_blank" href="https://icons8.com/icon/11705/trash-can">
+        Trash Can icon by Icons8
+      </a>
+    </footer>
+  </body>
+</html>

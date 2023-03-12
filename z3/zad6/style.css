@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(139, 218, 255, 0.2);
+}
+
+main{
+    width: 100%;
+}
+
+.contact{
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 700px;
+}
+
+.dataContainer{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    padding-left: 50px;
+}
+
+.number, .name{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.number{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 20px;
+}
+
+.binContainer{
+    width: 55px;
+    height: 55px;
+    background-color: rgb(4, 126, 0);
+    margin-right: 3%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bin{
+    width: 35px;
+    height: 35px;
+    filter: grayscale(1) invert();
+}
+
+footer>*{
+    color: transparent;
+}
+
+#addContactForm{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 700px;
+}
+
+.dataInput{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(128, 128, 128,0.7);
+    font-size: 25px;
+    padding: 0px 2% 0px 2%;
+    color: rgb(0, 0, 0,0.8);
+}
+
+.dataInput:focus{
+    outline: none;
+}
+
+.inputDataContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin-right: 1%;
+    margin-left: 1%;
+    color: rgb(128, 128, 128,0.9);
+}
+
+.inputDataContainer>label{
+    margin-bottom: 7px;
+}
+
+#submitFormButton{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(4, 126, 0);
+    color: white;
+    font-size: 22px;
+}
+
+#notVisual{
+    color: transparent;
+}
+
+#containerWithButton{
+    width: 20%;
+}

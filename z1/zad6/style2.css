@@ -1,0 +1,40 @@
+nav{
+    width: 100%;
+    border: 3px solid red;
+    height: 100px;
+    display: flex;
+}
+
+#leftPart{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rightPart{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+}
+
+.actionBlock{
+    border: 2px solid blue;
+    color: white;
+    background-color: rgb(239,11,11);
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}

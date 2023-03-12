@@ -1,0 +1,60 @@
+#gridContainer{
+    width: 98.5%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.34%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 15px;
+}
+
+.gridElement{
+    padding: 10px;
+    background-color: rgb(253, 213, 104, 0.4);
+    border: 3px solid rgb(255, 207, 73);
+    border-radius: 15px;
+    color: red;
+    font-size: 120%;
+}
+
+
+#el1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#el2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#el3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5; 
+}
+
+#el4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+
+#el5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+}
+
+#el6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+}

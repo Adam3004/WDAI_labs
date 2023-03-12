@@ -1,0 +1,60 @@
+#content{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+
+#mainTitle{
+    color: rgb(0, 67, 155);
+    padding-left: 1%;
+}
+
+header{
+    border: 2px solid grey;
+    border-style: dotted;
+    border-right: 0px;
+}
+
+nav{
+    border-left: 2px solid grey;
+    border-right: 0px;
+    border-top: 0px;
+    border-style: dotted;
+    border-bottom: 0px;
+    padding-top: 0.1px;
+    padding-left: 1.5%;
+}
+
+#gallery{
+    width: 456px;
+    padding-left: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info{
+    width: 100%;
+    text-align: center;
+}
+
+#figure2{
+    position: relative;
+    float: right;
+}
+
+#figure1{
+    position: relative;
+    float: left;
+}
+
+.figure{
+    position: relative;
+    width: 208px;
+    padding-right: 20px;
+}
+
+.photo{
+    border: 1px solid black;
+    padding: 3px;
+}

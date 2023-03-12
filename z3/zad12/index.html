@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Zombie game</title>
+  </head>
+  <body>
+    <header>
+      <p id="nickText"></p>
+      <p id="counter">0</p>
+    </header>
+    <main>
+      <div id="board"></div>
+      <div id="gunPoint">
+        <div id="redPoint"></div>
+      </div>
+      <div id="startingMenu">
+        <form id="nickForm">
+          <label id="nickLabel" for="nick">Enter your nick:</label>
+          <input id="nick" type="text" required />
+          <input type="submit" value="Start" id="startButton" />
+        </form>
+      </div>
+      <div id="endingMenuContainer">
+        <div id="endingMenu">
+          <p id="endingMenuTitle" class="eText">
+            Good job ... you got x points
+          </p>
+          <div id="scoreBoardContainer">
+            <p id="scoreBoardTitle" class="eText">Score board</p>
+            <ol id="scoreBoard">
+              <li id="scoreBoardItem1" class="scoreBoardItem"></li>
+              <li id="scoreBoardItem2" class="scoreBoardItem"></li>
+              <li id="scoreBoardItem3" class="scoreBoardItem"></li>
+              <li id="scoreBoardItem4" class="scoreBoardItem"></li>
+              <li id="scoreBoardItem5" class="scoreBoardItem"></li>
+              <li id="scoreBoardItem6" class="scoreBoardItem"></li>
+              <li id="scoreBoardItem7" class="scoreBoardItem"></li>
+            </ol>
+          </div>
+          <button type="button" id="resetGameButton">Play again</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

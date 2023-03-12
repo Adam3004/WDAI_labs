@@ -1,0 +1,270 @@
+body {
+  background-image: url("images/abstract.jpg");
+  background-size: 110%;
+  background-repeat: inherit;
+}
+
+nav {
+  width: 100%;
+  min-width: 320px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#logo {
+  position: absolute;
+  left: 4%;
+  top: 12px;
+  color: cornflowerblue;
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: font-size 1s, top 0.5s;
+}
+
+#optionsContainer {
+  width: 50%;
+  height: 100%;
+  margin-right: 5%;
+  display: flex;
+  position: absolute;
+  transition: width 1s, margin-top 0.8s, margin-right 0.8s, opacity 0.01s,
+    color 0.5s, height 1s, background-color 1s;
+  opacity: 1;
+}
+
+/* #optionsContainer > *,
+.option > * {
+  transition: all 0.5s;
+} */
+
+.option {
+  font-size: 23px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: font-size 2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clickable {
+  color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hamburgerContainer {
+  display: none;
+  width: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid cornflowerblue;
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  transition: 0.3s transform linear, opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+#clicker {
+  display: none;
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+
+#hamburger::before,
+#hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid cornflowerblue;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: opacity 0.75s ease-in;
+}
+
+#hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear, opacity 1s ease-in;
+}
+
+#hamburger:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+
+#hamburger:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
+.clickable:hover{
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1824px) {
+  body {
+    background-size: initial;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .option {
+    font-size: 21px;
+  }
+  #optionsContainer {
+    width: 55%;
+  }
+
+  #logo {
+    font-size: 50px;
+    top: 16px;
+  }
+
+  .clickable:hover{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .option {
+    font-size: 16px;
+  }
+  #optionsContainer {
+    margin-right: 0px;
+    transition: width 1s, margin-top 0.8s, margin-right 2s, opacity 2s ease-out,
+      color 0.5s, height 1s, background-color 1s;
+  }
+
+  #logo {
+    font-size: 45px;
+    top: 19px;
+  }
+
+  .clickable:hover{
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #optionsContainer {
+    transition: width 0.1s, margin-top 0.8s, margin-right 2s,
+      opacity 2s ease-out, color 0.5s, height 1s, background-color 1s;
+  }
+  #hamburger::after {
+    transition: 0.3s transform linear, opacity 0.2s ease-in;
+  }
+  #hamburger::before {
+    transition: opacity 0.75s ease-in, opacity 0.4s ease-in;
+  }
+  #hamburger {
+    transition: 0.3s transform linear, opacity 0.6s ease-in;
+  }
+  #optionsContainer > *,
+  .option > * {
+    transition: all 0.01s;
+  }
+
+  #hamburger:focus ~ #optionsContainer {
+    transition: width 0.01s, margin-top 1.5s, margin-right 1.5s, opacity 2s,
+      color 0.5s, height 1s, background-color 0.01s;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #optionsContainer {
+    transition: width 1s, margin-top 0.8s, margin-right 2s, opacity 2s ease-out,
+      color 0.5s, height 1s, background-color 1s;
+  }
+  #optionsContainer > *,
+  .option > * {
+    transition: all 0.5s;
+  }
+  #hamburger:focus ~ #optionsContainer {
+    transition: width 1s, margin-top 0.8s, margin-right 2s, opacity 2s ease-out,
+      color 0.5s, height 1s, background-color 1s;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #hamburger,
+  #hamburgerContainer {
+    opacity: 1;
+  }
+  #hamburger::before,
+  #hamburger::after {
+    opacity: 1;
+  }
+  nav {
+    height: 500px;
+  }
+  #optionsContainer {
+    top: -2px;
+    opacity: 0;
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+    margin-right: 0px;
+    display: inline-block;
+    transition: width 0.1s 0.3s, margin-top 0.8s 0.3s, margin-right 0.8s 0.3s, opacity 0.01s,
+      color 0.5s 0.3s, height 1s 0.3s, background-color 1s 0.3s;
+  }
+
+  .option {
+    transition: width 0.2s 0.5s, height 0.2s 0.5s, font-size 0.2s 0.5s, opacity 0.01s;
+    width: 100%;
+    height: 20%;
+    font-size: 23px;
+    opacity: 0;
+  }
+
+  .option > * {
+    color: white;
+  }
+
+  #logo {
+    font-size: 40px;
+    transition: top 1s;
+    top: 5px;
+  }
+  #hamburger:focus ~ #optionsContainer {
+    opacity: 1;
+    background-color: cornflowerblue;
+    transition: width 2s, margin-top 0.5s, margin-right 0.5s, opacity 0.01s,
+      color 0.5s, height 1s, background-color 1s;
+  }
+  #hamburger:focus ~ #optionsContainer>.option{
+    opacity: 1;
+  }
+
+  #hamburger:focus ~ #clicker {
+    display: block;
+    opacity: 0;
+  }
+
+  .clickable:hover{
+    font-size: 25px;
+  }
+}
+

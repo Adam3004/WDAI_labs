@@ -1,0 +1,475 @@
+body {
+  background-color: rgb(184, 184, 184, 0.6);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorBackGround {
+  width: 500px;
+  height: 540px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(0, 65, 187),
+    rgb(47, 162, 255)
+  );
+  margin: 20px 0px 20px 100px;
+  position: relative;
+  box-shadow: -3px 0px 13px 5px rgb(0, 0, 0, 0.2);
+  transition: width 1s, height 1s;
+}
+
+#whiteBackGround {
+  width: 524px;
+  height: 99%;
+  background-color: white;
+  box-shadow: 0 0px 13px 5px rgb(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 450px;
+  position: relative;
+}
+
+#shoeImg {
+  width: 700px;
+  transform: rotate(-20deg) scale(1);
+  position: absolute;
+  left: -200px;
+  top: 80px;
+  transition: transform 1s;
+}
+
+#nikeText {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 255, 255, 0.15);
+  font-size: 220px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+#nikeLogoImg {
+  width: 100px;
+  filter: grayscale(1) invert(1);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#iconInShareButton {
+  width: 30px;
+  transition: width 1s;
+}
+
+#shareButton {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 1s, height 1s;
+}
+
+#whiteBackGround > * {
+  width: 80%;
+  border-bottom: 1px solid grey;
+}
+
+#whiteBackGround:last-child {
+  border: 0px;
+}
+
+#lastSection {
+  border: 0px;
+}
+
+#mainInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#shoesName {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 45px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#new {
+  width: 60px;
+  height: 38px;
+  color: white;
+  background-color: rgb(20, 114, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+#purpose {
+  font-size: 20px;
+  color: rgb(46, 46, 46);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0px;
+}
+
+#description {
+  margin-top: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(77, 77, 77, 0.9);
+}
+
+.title {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(46, 46, 46, 0.9);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#colorText {
+  width: 100%;
+}
+
+#colorContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border: 0px;
+}
+
+.color:focus {
+  outline: 0;
+}
+
+.blue {
+  border: 5px solid white;
+  box-shadow: 0 0px 8px 2px rgb(0, 0, 0, 0.2);
+  background-color: rgb(20, 114, 255, 0.95);
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: rgb(0, 182, 0);
+}
+
+.orange {
+  background-color: rgb(255, 145, 0);
+}
+
+.black {
+  background-color: black;
+}
+
+#colorContainer:has(.color:focus:not(.blue)) .blue:hover,
+#colorContainer:has(.color:focus:not(.red)) .red:hover,
+#colorContainer:has(.color:focus:not(.green)) .green:hover,
+#colorContainer:has(.color:focus:not(.black)) .black:hover,
+#colorContainer:has(.color:focus:not(.orange)) .orange:hover {
+  border: 5px solid white;
+  box-shadow: 0 0px 8px 2px rgb(0, 0, 0, 0.2);
+}
+
+#colorContainer:has(.color:hover:not(.blue)) .blue,
+#colorContainer:has(.color:focus:not(.blue)) .blue,
+#colorContainer:has(.color:hover:not(.red)) .red,
+#colorContainer:has(.color:focus:not(.red)) .red,
+#colorContainer:has(.color:hover:not(.green)) .green,
+#colorContainer:has(.color:focus:not(.green)) .green,
+#colorContainer:has(.color:hover:not(.black)) .black,
+#colorContainer:has(.color:focus:not(.black)) .black,
+#colorContainer:has(.color:hover:not(.orange)) .orange,
+#colorContainer:has(.color:focus:not(.orange)) .orange {
+  border: 0px;
+  box-shadow: none;
+}
+
+.color:focus,
+.color:hover {
+  border: 5px solid white;
+  box-shadow: 0 0px 8px 2px rgb(0, 0, 0, 0.2);
+}
+
+#sizeContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#startingPosition {
+  background-color: rgb(20, 114, 255, 0.95);
+  color: white;
+}
+
+.sizeOption:focus {
+  background-color: rgb(20, 114, 255, 0.95);
+  color: white;
+}
+
+#sizeContainer:has(.seven:focus) #startingPosition,
+#sizeContainer:has(.eight:focus) #startingPosition,
+#sizeContainer:has(.ten:focus) #startingPosition,
+#sizeContainer:has(.eleven:focus) #startingPosition {
+  background-color: rgb(221, 221, 221);
+  color: black;
+}
+
+#buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  height: 55px;
+  width: 200px;
+  font-size: 18px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(20, 114, 255, 0.95);
+}
+
+#cartImg {
+  width: 22px;
+  filter: grayscale(1) invert(1);
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+#lastSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#price {
+  font-size: 20px;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 130px;
+  align-items: center;
+  color: rgb(46, 46, 46);
+}
+
+#price > :first-child {
+  margin-top: 10px;
+  font-size: 35px;
+  float: right;
+}
+
+#price > :last-child {
+  font-size: 50px;
+  float: left;
+}
+
+.sizeOptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+}
+
+.sizeOptionText {
+  position: absolute;
+  color: rgb(44, 44, 44);
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.sizeOption {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  color: rgb(44, 44, 44);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  opacity: 0;
+}
+
+.sizeOptionContainer:has(.sizeOption:checked) {
+  background-color: rgb(20, 114, 255, 0.95);
+}
+
+.sizeOption:checked ~ .sizeOptionText {
+  color: white;
+}
+
+/* zmiana kolorów */
+
+main:has(#blue:focus) .colorChangeable {
+  filter: hue-rotate(0deg);
+}
+main:has(#blue:hover) .colorChangeable {
+  filter: hue-rotate(0deg) !important;
+}
+
+main:has(#black:focus) .colorChangeable {
+  filter: grayscale(1);
+}
+
+main:has(#black:hover) .colorChangeable {
+  filter: grayscale(1) !important;
+}
+
+main:has(#orange:focus) .colorChangeable {
+  filter: hue-rotate(165deg);
+}
+main:has(#orange:hover) .colorChangeable {
+  filter: hue-rotate(165deg) !important;
+}
+
+main:has(#orange:focus) .colorChangeableImg {
+  filter: hue-rotate(350deg);
+}
+main:has(#orange:hover) .colorChangeableImg {
+  filter: hue-rotate(350deg) !important;
+}
+
+main:has(#red:focus) .colorChangeable {
+  filter: hue-rotate(500deg);
+}
+
+main:has(#red:hover) .colorChangeable {
+  filter: hue-rotate(500deg) !important;
+}
+
+main:has(#red:focus) .colorChangeableImg {
+  filter: hue-rotate(350deg);
+}
+main:has(#red:hover) .colorChangeableImg {
+  filter: hue-rotate(350deg) !important;
+}
+
+main:has(#green:focus) .colorChangeable {
+  filter: hue-rotate(630deg);
+}
+main:has(#green:hover) .colorChangeable {
+  filter: hue-rotate(630deg) !important;
+}
+
+main:has(#green:focus) .colorChangeableImg {
+  filter: hue-rotate(350deg);
+}
+main:has(#green:hover) .colorChangeableImg {
+  filter: hue-rotate(350deg) !important;
+}
+
+main:has(#green:focus) .sizeOptionContainer:has(.sizeOption:checked) {
+  background-color: rgb(13, 162, 32);
+}
+main:has(#green:hover) .sizeOptionContainer:has(.sizeOption:checked){
+  background-color: rgb(13, 162, 32)!important;
+}
+
+main:has(#red:focus) .sizeOptionContainer:has(.sizeOption:checked) {
+  background-color: rgb(255, 72, 52);
+}
+main:has(#red:hover) .sizeOptionContainer:has(.sizeOption:checked){
+  background-color: rgb(255, 72, 52)!important;
+}
+
+main:has(#blue:focus) .sizeOptionContainer:has(.sizeOption:checked) {
+  background-color: rgb(20, 114, 255, 0.95);
+}
+main:has(#blue:hover) .sizeOptionContainer:has(.sizeOption:checked){
+  background-color: rgb(20, 114, 255, 0.95)!important;
+}
+
+main:has(#orange:focus) .sizeOptionContainer:has(.sizeOption:checked) {
+  background-color: rgb(226, 90, 13);
+}
+main:has(#orange:hover) .sizeOptionContainer:has(.sizeOption:checked){
+  background-color: rgb(226, 90, 13)!important;
+}
+
+main:has(#black:focus) .sizeOptionContainer:has(.sizeOption:checked) {
+  background-color: rgb(112, 112, 112);
+}
+main:has(#black:hover) .sizeOptionContainer:has(.sizeOption:checked){
+  background-color: rgb(112, 112, 112)!important;
+}
+
+
+@media screen and (max-width: 1139px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  #colorBackGround {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 524px;
+    height: 324px;
+    transition: width 1s, height 1s;
+  }
+
+  #whiteBackGround {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #shoeImg {
+    transform: rotate(-5deg) scale(0.75);
+    left: -116px;
+    top: -49px;
+    transition: scale 1s;
+  }
+
+  #shareButton {
+    width: 40px;
+    height: 40px;
+    transition: width 1s, height 1s;
+  }
+
+  #iconInShareButton {
+    width: 26px;
+    transition: width 1s;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #whiteBackGround {
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 524px;
+  }
+
+  #colorBackGround {
+    min-width: 524px;
+  }
+}

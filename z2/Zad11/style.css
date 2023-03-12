@@ -1,0 +1,302 @@
+body {
+  background-color: rgb(201, 201, 87);
+}
+
+.menu {
+  width: 600px;
+  height: 320px;
+  background-color: rgb(253, 90, 191);
+  transition: height 1s, border-radius 1s;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 100px;
+  position: relative;
+}
+
+.menuOption:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuOption {
+  width: 600px;
+  height: 80px;
+  position: relative;
+  background-color: rgb(253, 90, 191);
+  transition: transform 1s;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.returner {
+  width: 600px;
+  height: 80px;
+  background-color: transparent;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 0px;
+  display: none;
+}
+
+#returner1 {
+  top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#returner2 {
+  top: 80px;
+}
+
+#returner3 {
+  top: 160px;
+}
+
+#end {
+  width: 600px;
+  height: 80px;
+  position: relative;
+  background-color: rgb(253, 90, 191);
+  transition: transform 1s;
+  border: 0px;
+  padding: 0px;
+  font-size: 24px;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.positionText {
+  float: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.links {
+  width: 600px;
+  height: 0px;
+  background-color: rgb(32, 89, 163);
+  position: absolute;
+  top: 80px;
+  transition: height 1s, font-size 1s, opacity 0.5s;
+  left: 0px;
+  border: 0px;
+}
+
+.links {
+  font-size: 0px;
+  opacity: 0;
+}
+
+.links > li {
+  width: 100%;
+  height: 25%;
+}
+
+.linkInLink::after {
+  /* display: none; */
+  content: "";
+  width: 600px;
+  height: 20px;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.2);
+  right: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.linkInLink1::after {
+  top: 20px;
+}
+
+.linkInLink2::after {
+  top: 60px;
+}
+
+.linkInLink3::after {
+  top: 100px;
+}
+
+.linkInLink4::after {
+  top: 140px;
+}
+
+.links > li > a {
+  width: 560px;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.triangle-right {
+  /* display: none; */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 0px;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  /* transition: border 0.5s; */
+}
+
+.triangle-left {
+  /* display: none; */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 0px;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: 0px;
+  /* transition: border 0.5s; */
+}
+
+.smallTriangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-top: 15px solid rgb(253, 90, 191);
+  border-right: 15px solid transparent;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+}
+
+.triangleR1,
+.triangleL1 {
+  top: 0px;
+}
+
+.triangleR2,
+.triangleL2 {
+  top: 40px;
+}
+
+.triangleR3,
+.triangleL3 {
+  top: 80px;
+}
+
+.triangleR4,
+.triangleL4 {
+  top: 120px;
+}
+
+#backGroundFiller {
+  width: 100%;
+  height: 0px;
+  background-color: rgb(253, 90, 191);
+  transition: height 1s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#backGroundFiller2 {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  height: 200px;
+  top: 319px;
+}
+
+.menuOption:focus {
+  background-color: rgb(165, 56, 42);
+}
+
+#lastLinks {
+  transition: height 1s, border-radius 1s;
+}
+
+/* po najechaniu na item */
+
+.link1:hover .linkInLink1::after,
+.link2:hover .linkInLink2::after,
+.link3:hover .linkInLink3::after,
+.link4:hover .linkInLink4::after {
+  /* display: block; */
+  opacity: 1;
+}
+
+.link:hover .triangle-left,
+.link:hover .triangle-right {
+  /* display: block; */
+  transition: border 0.5s;
+}
+
+.link:hover .triangle-left {
+  border-right: 30px solid rgb(201, 201, 87);
+}
+
+.link:hover .triangle-right {
+  border-left: 30px solid rgb(201, 201, 87);
+}
+
+/* wysówanie dla poszczególnych przycisków */
+.menuOption:focus .links {
+  height: 160px;
+}
+
+.menuOption:focus ~ #backGroundFiller {
+  height: 160px;
+}
+
+#menuOption1:focus ~ #menuOption2,
+#menuOption1:focus ~ #menuOption3,
+#menuOption1:focus ~ #menuOption4 {
+  transform: translateY(160px);
+}
+
+#menuOption2:focus ~ #menuOption3,
+#menuOption2:focus ~ #menuOption4 {
+  transform: translateY(160px);
+}
+
+#menuOption3:focus ~ #menuOption4 {
+  transform: translateY(160px);
+}
+
+.menuOption:focus ~ #end {
+  transform: translateY(160px);
+}
+
+.menu:has(.menuOption:focus) {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#menuOption1:focus ~ #returner1,
+#menuOption2:focus ~ #returner2,
+#menuOption3:focus ~ #returner3 {
+  display: block;
+}
+
+.menuOption:focus .smallTriangle {
+  border-top: 15px solid rgb(165, 56, 42);
+}
+
+.menuOption:focus ul {
+  font-size: 20px;
+  opacity: 1;
+}
+
+#menuOption3:focus ~ #backGroundFiller2,
+#menuOption2:focus ~ #backGroundFiller2,
+#menuOption1:focus ~ #backGroundFiller2 {
+  transform: translateY(160px);
+}  

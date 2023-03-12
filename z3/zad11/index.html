@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Countries</title>
+  </head>
+  <body>
+    <nav>
+      <button id="page1" class="pageButton">1</button>
+      <button id="page2" class="pageButton">2</button>
+      <button id="page3" class="pageButton">3</button>
+      <button id="page4" class="pageButton">4</button>
+      <button id="page5" class="pageButton">5</button>
+    </nav>
+    <main>
+      <table id="table" cellspacing="0">
+        <tbody id="tbody">
+          <tr id="headline">
+            <!-- <th class="headerInTable">
+              <div class="headerContainer">Subregion</div>
+            </th> -->
+            <th class="headerInTable">
+              <div class="headerContainer">
+                Name
+                <img
+                  id="nameOrderButton"
+                  class="orderButton"
+                  src="https://img.icons8.com/material-rounded/96/null/down-squared.png"
+                />
+              </div>
+              <input type="text" id="nameInput" />
+            </th>
+            <th class="headerInTable">
+              <div class="headerContainer">
+                Capital
+                <img
+                  id="capitalOrderButton"
+                  class="orderButton"
+                  src="https://img.icons8.com/material-rounded/96/null/down-squared.png"
+                />
+              </div>
+              <input type="text" id="capitalInput" />
+            </th>
+            <th class="headerInTable">
+              <div class="headerContainer">
+                Population
+                <img
+                  id="populationOrderButton"
+                  class="orderButton"
+                  src="https://img.icons8.com/material-rounded/96/null/down-squared.png"
+                />
+              </div>
+              <input type="number" id="populationInput" min="0"/>
+            </th>
+            <th class="headerInTable">
+              <div class="headerContainer">
+                Area
+                <img
+                  id="areaOrderButton"
+                  class="orderButton"
+                  src="https://img.icons8.com/material-rounded/96/null/down-squared.png"
+                />
+              </div>
+              <input type="number" id="areaInput" min="0"/>
+            </th>
+          </tr>
+          <!-- <tr id="row1" class="subregionRow">
+            <td class="tableRowElement">Western Africa</td>
+              <tr>
+                <th>abc</th>
+                <th>abc</th>
+                <th>abc</th>
+              </tr>
+              <tr>
+                <th>abc</th>
+                <th>abc</th>
+                <th>abc</th>
+              </tr>
+              <tr>
+                <th>abc</th>
+                <th>abc</th>
+                <th>abc</th>
+              </tr>
+          </tr>
+          <tr id="row2" class="subregionRow">
+            <td class="tableRowElement">Western Africaa</td>
+            <table>
+              <tr>
+                <th>abc</th>
+                <th>abc</th>
+                <th>abc</th>
+              </tr> -->
+            </table>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

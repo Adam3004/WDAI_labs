@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nagłowek tekstowy</h1>
+      <p id="headerContent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        numquam perspiciatis tempore. Repudiandae perspiciatis sit, ex repellat
+        incidunt illum distinctio, illo voluptate omnis dignissimos nesciunt
+        soluta vero necessitatibus! Obcaecati, nam? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Beatae, velit vel animi non excepturi
+        architecto facilis eum quibusdam.
+      </p>
+      <button id="moreInfo" type="button" onclick="alert('More info')">
+        Więcej info
+      </button>
+      <div id="placeholder"></div>
+    </header>
+    <div id="helper"></div>
+    <main>
+      <form>
+        <h3>Formularz Testowy</h3>
+        <input
+          type="text"
+          class="formInput"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required
+        /><br />
+        <input
+          type="text"
+          class="formInput"
+          id="companyName"
+          name="companyName"
+          placeholder="Company Name"
+          required
+        /><br />
+        <input
+          type="email"
+          class="formInput"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        /><br />
+        <button type="submit" id="formButton">Send</button>
+      </form>
+    </main>
+  </body>
+</html>

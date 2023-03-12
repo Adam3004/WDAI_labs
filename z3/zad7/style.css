@@ -1,0 +1,12 @@
+.outputContainer{
+    width: 100%;
+    /* background-color:cadetblue; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    display: none;
+}
+
+
+body{
+    background-color: wheat;
+}

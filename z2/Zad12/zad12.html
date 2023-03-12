@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nike shoes shop</title>
+  </head>
+  <body>
+    <main>
+      <div id="colorBackGround" class="colorChangeable">
+        <p id="nikeText">NIKE</p>
+        <button
+          id="shareButton"
+          type="button"
+          onclick="alert('You shared this shoes')"
+        >
+          <img
+            id="iconInShareButton"
+            class="colorChangeable colorChangeableImg"
+            src="https://img.icons8.com/color/48/null/share--v1.png"
+          />
+        </button>
+        <img id="shoeImg" class="colorChangeable colorChangeableImg" src="images/blue.png" />
+        <img id="nikeLogoImg" src="images/logo-nike.jpg" />
+      </div>
+      <div id="whiteBackGround">
+        <div id="mainInfo">
+          <h1 id="shoesName">Nike Zoom KD 12</h1>
+          <div id="new" class="colorChangeable">NEW</div>
+          <p id="purpose">Men's Running Shoes</p>
+        </div>
+        <div id="additionalInfo">
+          <h3 id="descriptionTitle" class="title">PRODUCT INFO</h5>
+          <p id="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ut
+            nihil dolorum sunt, at blanditiis omnis incidunt totam repudiandae
+            voluptates!
+          </p>
+        </div>
+        <div id="chooseColor">
+            <h3 id="colorText" class="title">COLOR</h3>
+            <div id="colorContainer">
+                <button type="button" class="color blue" id="blue" autofocus></button>
+                <button type="button" class="color red" id="red"></button>
+                <button type="button" class="color green" id="green"></button>
+                <button type="button" class="color orange" id="orange"></button>
+                <button type="button" class="color black" id="black"></button>
+            </div>
+        </div>
+        <div id="chooseSize">
+            <h3 id="sizeText" class="title">SIZE</h3>
+            <div id="sizeContainer">
+                <!-- <button class="sizeOption seven colorChangeable">7
+                </button>
+                <button class="sizeOption eight">8
+                </button>
+                <button class="sizeOption colorChangeable" id="startingPosition" autofocus>9
+                </button>
+                <button class="sizeOption ten">10
+                </button>
+                <button class="sizeOption eleven">11
+                </button> -->
+                <div class="sizeOptionContainer">
+                <input type="radio" id="so1" name="size" class="sizeOption seven colorChangeable">
+                  	<label class="sizeOptionText" for="so1">7</label>
+                </input>
+              </div>
+              <div class="sizeOptionContainer">
+                <input type="radio" name="size" id="so2" class="sizeOption eight">
+                  <label class="sizeOptionText" for="so2">8</label>
+                </input>
+              </div>
+              <div class="sizeOptionContainer">
+                <input type="radio"name="size" id="so3" class="sizeOption colorChangeable" id="startingPosition" checked>
+                  <label class="sizeOptionText" for="so3">9</label>
+                </input>
+                
+              </div>
+              <div class="sizeOptionContainer">
+                <input type="radio" name="size" id="so4" class="sizeOption ten">
+                  <label class="sizeOptionText" for="so4">10</label>
+                </input>
+                
+              </div>
+              <div class="sizeOptionContainer">
+                <input type="radio"name="size" id="so5" class="sizeOption eleven">
+                  <label class="sizeOptionText" for="so5">11</label>
+                </input>
+                
+              </div>
+          
+        </div>
+        </div>
+        <div id="lastSection">
+            <button id="buy" type="button" class="colorChangeable" onclick="alert('Product added to card')">
+              <img id="cartImg" src="https://img.icons8.com/ios-glyphs/30/null/shopping-cart--v1.png"/>
+              <p>ADD TO CARD</p>
+            </button>
+            <div id="price">
+              <p>$</p>
+              <p>189.99</p>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <a target="_blank" href="https://icons8.com/icon/12771/share">
+        Share icon by Icons8
+      </a> -->
+      <!-- <a target="_blank" href="https://icons8.com/icon/59997/shopping-cart">Shopping Cart icon by Icons8</a> -->
+    </footer>
+  </body>
+</html>
