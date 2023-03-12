@@ -1,5 +1,8 @@
 # WDAI_labs
-Exercises done on introduction to web applications labs
+Exercises done on introduction to web applications labs. 
+- z1 is mostly about testing hmtl possibilites
+- in z2 I trained responsive solutions
+- z3 is about js
 #### Most worth to see is exercise 12 in lab 3 (/z3/zad12)
 This is game where you can shoot to zombie
 ![image](https://user-images.githubusercontent.com/57947739/224546408-84e5a2ff-d70b-4a1a-b519-a570e9572d04.png)
