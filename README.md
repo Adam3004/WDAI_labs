@@ -1,6 +1,6 @@
 # WDAI_labs
 Exercises done on introduction to web applications labs. 
-- z1 is mostly about testing hmtl possibilites
+- z1 is mostly about testing hmtl possibilities
 - in z2 I trained responsive solutions
 - z3 is about js
 #### Most worth to see is exercise 12 in lab 3 (/z3/zad12)
