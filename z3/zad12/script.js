@@ -1,5 +1,5 @@
 const zombies = [];
-const jsonUrl = "https://jsonblob.com/api/jsonBlob/1045480809456484352";
+const jsonUrl = "";
 var zombieCounter = 0;
 var aliveZombieOnTheEnd = 0;
 var gameInProgres = true;
